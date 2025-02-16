@@ -1,10 +1,10 @@
 # nome da Pipeline
-name: Run Basic Testes
+name: Run Basic Testes -scheduler
 
 # em que momento sera executada
 on:
-  pull_request:
-    branches: [master]
+  - schedule:
+      - cron: '0 20  * * *'
 
 
 

@@ -27,7 +27,7 @@ export default{
     },
 
     preencherSenha(senha){
-        cy.get('#password')
+        cy.get('#passwordx')
             .type(senha)
     },
     validarMensagemSucesso(nome){

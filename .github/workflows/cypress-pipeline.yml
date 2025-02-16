@@ -23,7 +23,7 @@ jobs:
 
 #exemplo de execução no terminal
       - name: Instalar dependencias do projeto
-        run: echo emival Ferreira    
+        run: npm install  
 
 # exemplo de execução no terminal
       - name: Run testes

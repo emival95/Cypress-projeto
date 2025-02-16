@@ -14,7 +14,7 @@ jobs:
   cypress-run:
   # maquina que ira executar o script
     runs-on: ubuntu-latest
-    
+
 # passo a passo para rodar os teste    
     steps:
     # clone do projeto
@@ -23,12 +23,12 @@ jobs:
 
 #exemplo de execução no terminal
       - name: Instalar dependencias do projeto
-        run: echo emival Ferreira    
+        run: npm install  
 
 # exemplo de execução no terminal
       - name: Run testes
         uses: cypress-io/github-action@v5
         with:
           record: true
-          env:
+        env:
             CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
